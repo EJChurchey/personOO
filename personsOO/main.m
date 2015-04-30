@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "personsOO.h"
+   
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        person * EJ = [person alloc];
+        EJ = [EJ init: @"EJ" LastName:@"Churchey"];
+        [EJ Print];
+        
     }
     return 0;
 }
