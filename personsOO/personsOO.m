@@ -11,17 +11,30 @@
 
 @implementation person
 -(id) init {
-    self -> FirstName = @"EJ";
-    self -> LastName = @"Churchey";
+    self->firstName = @"EJ";
+    self->lastName = @"Churchey";
     return self;
 }
+-(NSString*) firstName {
+    return self->firstName;
+}
+-(NSString*) lastName {
+    return  self->lastName;
+}
+-(void) setFirstName: (NSString*) fName{
+    self->firstName = fName;
+}
+-(void) setLastName:(NSString *)lName;
+{
+    self->lastName = lName;
+}
 -(id) init: (NSString *) FirstName LastName: (NSString *) LastName{
-    self->FirstName = FirstName;
-    self->LastName = LastName;
+    self->firstName = FirstName;
+    self->lastName = LastName;
     return self;
 }
 -(void) Print {
-    NSLog(self->FirstName);
-    NSLog(self->LastName);
+    NSLog(self->firstName);
+    NSLog(self->lastName);
 }
 @end

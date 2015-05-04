@@ -14,6 +14,9 @@ int main(int argc, const char * argv[]) {
         person * EJ = [person alloc];
         EJ = [EJ init: @"EJ" LastName:@"Churchey"];
         [EJ Print];
+        [EJ setFirstName: @"Everett"];
+        NSLog([EJ firstName]);
+        
         
     }
     return 0;

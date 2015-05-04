@@ -10,12 +10,17 @@
 #define personsOO_personsOO_h
 @interface person : NSObject  {
     
-    NSString * FirstName ;
-    NSString * LastName ;
-    }
--(id) init;
--(id) init: (NSString *) FirstName LastName: (NSString *) LastName;
--(void) Print;
+    NSString * firstName ;
+    NSString * lastName ;
+}
+
+- (NSString*) firstName;
+- (void) setFirstName: (NSString*) fName;
+- (NSString*) lastName;
+- (void) setLastName: (NSString*) lName;
+- (id) init;
+- (id) init: (NSString *) FirstName LastName: (NSString *) LastName;
+- (void) Print;
 
 @end
 #endif
